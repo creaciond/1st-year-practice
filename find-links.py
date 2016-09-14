@@ -7,10 +7,7 @@ def findlinks(lpath):
     for line in letter:
         haslink = 'См\. письм[ао]: '
         if re.search(haslink, line):
-            hasTolstaya = 'С\. А\. Толстой'
-            hasChertkov = 'В\. Г\. Черткову'
-            if re.search(hasTolstaya, line) or re.search(hasTolstaya, line) 
-                return 1
+            return 1
     letter.close()
 
 
