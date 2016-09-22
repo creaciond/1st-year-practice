@@ -5,10 +5,12 @@ import re
 def findlinks(lpath):
     letter = open(lpath, 'r', encoding='utf-8')
     for line in letter:
-        haslink = 'См\. письм[ао]: '
+        haslink = 'См\. письм[ао]'
         if re.search(haslink, line):
             return 1
+            break
     letter.close()
+
 
 
 def showlinks(dirname):
