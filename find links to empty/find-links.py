@@ -2,24 +2,33 @@
 import os
 import re
 
-def findlinks(lpath):
+
+def linksTolstaya(lpath):
     letter = open(lpath, 'r', encoding='utf-8')
     for line in letter:
-        haslink = 'См\. письм[ао]'
+        haslink = 'См\. письм[ао].*?к С(офье|\. ?)А(ндреевне|\.) Толстой'
         if re.search(haslink, line):
             return 1
-            break
     letter.close()
 
+
+def linksChertkov(lpath):
+    letter = open(lpath, 'r', encoding='utf-8')
+    for line in letter:
+        haslink = 'См\. письм[ао].*?В(ладимиру|\. ?)Г(ригорьевичу|\.) Черткову'
+        if re.search(haslink, line):
+            return 1
+    letter.close()
 
 
 def showlinks(dirname):
     for each in os.listdir(dirname):
         if each.endswith('.xml'):
             lpath = dirname + '/' + each
-            if findlinks(lpath) == 1:
-                print(lpath)
-        
+            if linksTolstaya(lpath) == 1:
+                print("к Толстой", lpath)
+            if linksChertkov(lpath) == 1:
+                print("к Черткову", lpath)
 
 
 def main():
