@@ -1,7 +1,9 @@
-# 90-томник Толстого, электронное издание
+# Digital collection of works by Leo Tolstoy
+Link (in Russian): http://tolstoy.ru/creativity/90-volume-collection-of-the-works/
 
-**find links to empty** — код должен искать и находить все ссылки на "пустые" письма к Толстой и Черткову из томов 59-82 (сами тексты — в томах 83-89)
+**links** — all the "find" code is searching for links to letters to S.A. Tolstaya and V.G. Chertkov in volumes 53-82 (in these, the files are empty, all the texts are in volumes 83-89)
+* other code — finds letters according to the links in the .xml file
 
-**mark draft, unsent letters** — все письма, помеченные как "черновое" или "неотправленное", должны иметь соответствующий тег
+**mark draft, unsent letters** — all the letters marked as "черновое" (draft) or "неотправленное" (unsent) are to have a special attribute in tag `<correspAction>` (for instance, `<correspAction type="draft">` or `<correspAction type="unsent">`)
 
-**rename files** — из безликих letter1, letter2 переименовать письма в соответствии с их id из таблицы
+**rename files** — files named as Volume_N/letterQ.xml have to be renamed as VolumeN/letter_id.xml (retrieved from the letter itself: `<text xml:id="RektoruKazanskogouniversiteta._1">` means that letter ID is "RektoruKazanskogouniversiteta._1") 
