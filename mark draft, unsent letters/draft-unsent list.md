@@ -1,4 +1,4 @@
-== List of draft letters ==
+# List of draft letters 
 * Volume_59/A.I.Sobolevuchernovoe_16.xml
 * Volume_59/Kn.A.I.Baryatinskomuchernovoe_77.xml
 * Volume_59/N.A.Kryzhanovskomu_108.xml
@@ -63,7 +63,7 @@
 * Volume_82/V.E.Dobrovolskomu_120.xml
 * Volume_82/V.P.Bogdanovu_100.xml
 * Volume_82/ZH.BergmanuJ.BergmaniKarluKarlsonuBonduCarlCarlsonBonde_58.xml
-== List of unsent letters ==
+# List of unsent letters 
 * Volume_59/N.A.Nekrasovu_69.xml
 * Volume_70/E.F.CHarnockomu_181.xml
 * Volume_71/RedaktorugazetyNovoevremya_234.xml
